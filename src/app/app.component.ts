@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomTitleService } from './services/custom-title.service';
+import { CustomTitleService } from './services/CustomTitleService/custom-title.service';
 
 @Component({
   selector: 'app-root',
