@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/AuthService/auth.service';
 import { LoginUserVM } from 'src/app/ViewModel/login-user-vm.model';
+import { CustomTitleService } from 'src/app/services/CustomTitleService/custom-title.service';
 
 
 @Component({
@@ -13,10 +14,11 @@ import { LoginUserVM } from 'src/app/ViewModel/login-user-vm.model';
 export class LoginComponent implements OnInit {
    userFrom!: FormGroup;
    loginDto: LoginUserVM;
-   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router){
+   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router, private customeTitleService: CustomTitleService){
     this.loginDto = new LoginUserVM();
    }
   ngOnInit(): void {
+    this.customeTitleService.seTitle('Login');
     this.userFrom = this.fb.group({
       email: [this.loginDto.email, [Validators.required, Validators.email]],
       password: [this.loginDto.password, Validators.required]

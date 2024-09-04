@@ -26,9 +26,29 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/vendor/bowercomponent/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/assets/icon/feather/css/feather.css",
+              "src/assets/vendor/assets/icon/themify-icons/themify-icons.css",
+              "src/assets/vendor/assets/icon/icofont/css/icofont.css",
+              "src/assets/vendor/assets/icon/font-awesome/css/font-awesome.min.css",
+              "src/assets/vendor/assets/css/component.css",
+              "src/assets/vendor/assets/css/style.css",
+              "src/assets/vendor/assets/css/jquery.mCustomScrollbar.css" 
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/bowercomponent/jquery/js/jquery.min.js",
+              "src/assets/vendor/bowercomponent/jquery-ui/js/jquery-ui.min.js",
+              "src/assets/vendor/bowercomponent/popper.js/js/popper.min.js",
+              "src/assets/vendor/bowercomponent/bootstrap/js/bootstrap.min.js",
+              "src/assets/vendor/bowercomponent/i18next/js/i18next.min.js",
+              "src/assets/vendor/bowercomponent/i18next-xhr-backend/js/i18nextXHRBackend.min.js",
+              "src/assets/vendor/bowercomponent/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js",
+              "src/assets/vendor/bowercomponent/jquery-i18next/js/jquery-i18next.min.js",
+              "src/assets/vendor/assets/js/script.js",
+              "src/assets/vendor/assets/js/jquery.mCustomScrollbar.concat.min.js",
+              "src/assets/vendor/bowercomponent/jquery-slimscroll/js/jquery.slimscroll.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,8 +110,25 @@
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
+              // "src/assets/vendor/bowercomponent/bootstrap/css/bootstrap.min.css",
+              // "src/assets/vendor/assets/icon/feather/css/feather.css",
+              // "src/assets/vendor/assets/icon/themify-icons/themify-icons.css",
+              // "src/assets/vendor/assets/icon/icofont/css/icofont.css",
+              // "src/assets/vendor/assets/icon/font-awesome/css/font-awesome.min.css",
+              // "src/assets/vendor/assets/css/component.css",
+              // "src/assets/vendor/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              // "src/assets/vendor/bowercomponent/jquery/js/jquery.min.js",
+              // "src/assets/vendor/bowercomponent/jquery-ui/js/jquery-ui.min.js",
+              // "src/assets/vendor/bowercomponent/popper.js/js/popper.min.js",
+              // "src/assets/vendor/bowercomponent/bootstrap/js/bootstrap.min.js",
+              // "src/assets/vendor/bowercomponent/i18next/js/i18next.min.js",
+              // "src/assets/vendor/bowercomponent/i18next-xhr-backend/js/i18nextXHRBackend.min.js",
+              // "src/assets/vendor/bowercomponent/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js",
+              // "src/assets/vendor/bowercomponent/jquery-i18next/js/jquery-i18next.min.js",
+              // "src/assets/vendor/assets/js/script.js"
+            ]
           }
         }
       }
