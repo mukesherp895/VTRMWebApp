@@ -19,29 +19,30 @@ export class LoginComponent implements OnInit {
    }
   ngOnInit(): void {
     this.customeTitleService.seTitle('Login');
-    this.userFrom = this.fb.group({
-      email: [this.loginDto.email, [Validators.required, Validators.email]],
-      password: [this.loginDto.password, Validators.required]
-    });
+    // this.userFrom = this.fb.group({
+    //   email: [this.loginDto.email, [Validators.required, Validators.email]],
+    //   password: [this.loginDto.password, Validators.required]
+    // });
   }
 
   onSubmit(){
-    if(this.userFrom.valid)
-    {
-      this.loginDto = this.userFrom.value;
-      this.authService.login(this.loginDto.email, this.loginDto.password).subscribe(isAuth => {
-        if(isAuth)
-        {
-          this.router.navigate(['/']);
-        }
-        else{
-          console.log('login fail');
-        }
-      })
-    }
-    else{
-      console.log('invalid form');
-    }
+    console.log("Hi");
+    // if(this.userFrom.valid)
+    // {
+    //   this.loginDto = this.userFrom.value;
+    //   this.authService.login(this.loginDto.email, this.loginDto.password).subscribe(isAuth => {
+    //     if(isAuth)
+    //     {
+    //       this.router.navigate(['/']);
+    //     }
+    //     else{
+    //       console.log('login fail');
+    //     }
+    //   })
+    // }
+    // else{
+    //   console.log('invalid form');
+    // }
 
   }
   
